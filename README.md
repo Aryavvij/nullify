@@ -1,5 +1,7 @@
 # Nullify
 
+[![npm](https://img.shields.io/npm/v/@nullifyads/agent-guard?label=%40nullifyads%2Fagent-guard)](https://www.npmjs.com/package/@nullifyads/agent-guard) [![CI](https://github.com/Aryavvij/nullify/actions/workflows/ci.yml/badge.svg)](https://github.com/Aryavvij/nullify/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 **Stops click hijacking, for AI browser agents and for people.**
 
 Pages can turn a click into something you didn't ask for. An invisible layer over a video player opens an ad tab. A transparent button stacked on "No thanks" clicks "Confirm" instead. A script sends your tab to another site. People fall for it, and AI agents that click by screen coordinates fall for it every time: they press whatever is on top, visible or not.

@@ -158,7 +158,7 @@ Publish the guard on GitHub, npm and PyPI. Post it in the browser-use, Stagehand
 - **Silence** → finish Phase 4, write the paper, and treat it as a research project.
 
 
-### 🟡 Checkpoint A status: ready to launch, waiting on you
+### 🟡 Checkpoint A status: launched on npm, demand check next
 **Done:**
 - Licensed MIT (© 2026 Aryavvij); every package is at version 0.1.0 with full metadata.
 - `@nullifyads/core`, `@nullifyads/agent-guard` and `@nullifyads/mcp` were packed, installed from their tarballs into an empty project, and used successfully: a refused trap click, visible-only text, and the MCP server started via its installed command.
@@ -169,7 +169,12 @@ Publish the guard on GitHub, npm and PyPI. Post it in the browser-use, Stagehand
   - [docs/launch/CHECKPOINT-A.md](docs/launch/CHECKPOINT-A.md): where to post, what to measure, interview guide, go/no-go rule for Phase 5;
   - [docs/launch/posts.md](docs/launch/posts.md): post drafts.
 
-**Yours to do:** follow RELEASE.md (make the repo public, publish to npm and PyPI, create the GitHub release, submit to the Chrome Web Store), then run the two-week demand check in CHECKPOINT-A.md. Phase 5 starts only if that check passes, and only in a throwaway container or VM.
+**Released (14 Oct 2026):**
+- The repository is public, with a clean single-commit history; the full development history is kept in a private backup repo.
+- `@nullifyads/core`, `@nullifyads/agent-guard` and `@nullifyads/mcp` 0.1.0 are on npm (the org is `nullifyads`). Checksums match the uploads, and a fresh install from the registry passed the trap-click, hidden-text and MCP checks.
+- CI is green on GitHub.
+
+**Still to do:** PyPI (`nullify-guard`), the GitHub release with the extension zip, the Chrome Web Store submission, then the two-week demand check in CHECKPOINT-A.md. Phase 5 starts only if that check passes, and only in a throwaway container or VM.
 ## Phase 4: Extension + demo (weeks 10–12)
 - MV3 extension built on the same `core.js`: rogue-tab killer in the service worker, popup with stats, per-site toggle.
 - **Replay screen:** when something is blocked, show the chain (site → ad network → … → destination) and the script that did it. This is the demo moment.

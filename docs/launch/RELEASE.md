@@ -10,7 +10,8 @@ Everything below publishes something publicly, so run each step yourself. All pa
 ## 1. Repository
 Public since 14 October 2026. Turn on GitHub Pages (Settings → Pages → deploy from `main`, folder `/docs`), so the privacy policy is reachable at `https://aryavvij.github.io/nullify/store/PRIVACY`.
 
-## 2. npm (in this order: each package depends on the one before)
+## 2. npm ✅ done 14 Oct 2026 (org `nullifyads`)
+For later releases, publish in this order, since each package depends on the one before:
 First create a free organization named **nullify** on npmjs.com (avatar menu → Add Organization; the npm command line can't create one). If that name is taken, rename the packages to `nullify-core`, `nullify-agent-guard` and `nullify-mcp`, all free on 13 Oct 2026.
 ```bash
 npm login
