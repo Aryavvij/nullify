@@ -21,14 +21,14 @@ npm publish -w agent-guard
 npm publish -w mcp
 ```
 
-## 3. PyPI
+## 3. PyPI ✅ done 14 Oct 2026
 Create an API token at pypi.org (Account settings → API tokens), then:
 ```bash
 npm run build                   # copies the engine bundle into the Python package
 cd python && rm -rf dist && uv build && uv publish
 ```
 
-## 4. GitHub release
+## 4. GitHub release ✅ done 14 Oct 2026 (v0.1.0)
 ```bash
 npm run package:extension
 git tag v0.1.0 && git push origin v0.1.0

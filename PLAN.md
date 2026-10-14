@@ -174,7 +174,10 @@ Publish the guard on GitHub, npm and PyPI. Post it in the browser-use, Stagehand
 - `@nullifyads/core`, `@nullifyads/agent-guard` and `@nullifyads/mcp` 0.1.0 are on npm (the org is `nullifyads`). Checksums match the uploads, and a fresh install from the registry passed the trap-click, hidden-text and MCP checks.
 - CI is green on GitHub.
 
-**Still to do:** PyPI (`nullify-guard`), the GitHub release with the extension zip, the Chrome Web Store submission, then the two-week demand check in CHECKPOINT-A.md. Phase 5 starts only if that check passes, and only in a throwaway container or VM.
+- `nullify-guard` 0.1.0 is on PyPI, with checksums matching the builds; a fresh `pip install` passed the trap-click check.
+- GitHub release v0.1.0 has the extension zip; the downloaded zip was loaded in Chrome and blocked a test trap.
+
+**Still to do:** the Chrome Web Store submission, then the two-week demand check in CHECKPOINT-A.md. Phase 5 starts only if that check passes, and only in a throwaway container or VM.
 ## Phase 4: Extension + demo (weeks 10–12)
 - MV3 extension built on the same `core.js`: rogue-tab killer in the service worker, popup with stats, per-site toggle.
 - **Replay screen:** when something is blocked, show the chain (site → ad network → … → destination) and the script that did it. This is the demo moment.
