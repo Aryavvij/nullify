@@ -20,7 +20,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: npm test
 
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v10.2.0 # exact tags only: no moving @v10 is published
       - name: Python wrapper tests
         working-directory: python
         run: |
