@@ -55,4 +55,4 @@ Everything to paste into the developer dashboard. Images are in this folder; the
 - I do not use or transfer user data for purposes that are unrelated to my item's single purpose.
 - I do not use or transfer user data to determine creditworthiness or for lending purposes.
 
-**Privacy policy URL:** the published address of [PRIVACY.md](PRIVACY.md). It has to be publicly reachable; see "Before you submit" in [README.md](README.md).
+**Privacy policy URL:** https://aryavvij.github.io/nullify/store/PRIVACY

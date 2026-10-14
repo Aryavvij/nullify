@@ -15,12 +15,13 @@
 
 Regenerate the images with `npm run store:assets`.
 
+## Done
+- Privacy policy contact: GitHub Issues. Published at https://aryavvij.github.io/nullify/store/PRIVACY (GitHub Pages).
+- Name check (14 Oct 2026): no Chrome Web Store extension is called "Nullify". A Firefox add-on with that name exists (a page-decluttering tool). This was not a legal trademark search.
+
 ## Only you can do these
-1. **Choose a contact address** and put it in the last line of [PRIVACY.md](PRIVACY.md).
-2. **Publish the privacy policy at a public address.** The repository is private, so a link to the file won't work for the store. Options: make the repository public and use GitHub Pages, or paste the policy into a public GitHub Gist.
-3. **Check the name.** Other products may already be called "Nullify". Search the Chrome Web Store and do a quick trademark search before you commit to the name.
-4. **Register as a Chrome Web Store developer** (one-time fee) at the Chrome Web Store developer dashboard.
-5. **Upload the zip, paste the listing, upload the images, fill in the privacy tab, and submit.** Consider **Unlisted** visibility for the first version, so you can install it from the store and check it before it's public.
+1. Register as a Chrome Web Store developer.
+2. Upload the zip, paste the listing, upload the images, fill in the privacy tab, and submit.
 
 ## What to expect in review
 Access to all sites (`<all_urls>`) plus `scripting` usually triggers a longer, in-depth review. The permission justifications in LISTING.md explain why each one is needed. Keep the single purpose narrow in any future version: don't add unrelated features to the same extension.
