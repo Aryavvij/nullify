@@ -1,0 +1,43 @@
+{
+  "name": "@nullify/core",
+  "version": "0.1.0",
+  "description": "Detection engine behind Nullify: stops click hijacks (invisible overlays, unwanted pop-ups and redirects, hidden instructions) inside the page.",
+  "keywords": [
+    "security",
+    "clickjacking",
+    "popup-blocker",
+    "browser",
+    "malvertising",
+    "prompt-injection"
+  ],
+  "license": "MIT",
+  "author": "Aryavvij",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryavvij/nullify.git",
+    "directory": "core"
+  },
+  "homepage": "https://github.com/Aryavvij/nullify#readme",
+  "bugs": {
+    "url": "https://github.com/Aryavvij/nullify/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./iife": "./dist/core.iife.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

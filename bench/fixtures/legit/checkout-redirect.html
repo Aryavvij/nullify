@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: checkout redirect</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Your cart</h1>
+<button id="checkout">Continue to payment</button>
+<script>
+  document.getElementById("checkout").addEventListener("click", () => { location.href = FIX.url("pay.test", "/landing.html?checkout"); });
+</script>
+</body></html>

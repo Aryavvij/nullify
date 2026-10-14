@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: clickable card</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Partner offers</h1>
+<div class="card" id="card" style="cursor:pointer;border:1px solid #ccc;padding:16px;width:300px">
+  <h2>50% off hosting</h2><p>From our partner.</p>
+</div>
+<script>
+  document.getElementById("card").onclick = () => window.open(FIX.url("partner.test", "/landing.html?card"));
+</script>
+</body></html>

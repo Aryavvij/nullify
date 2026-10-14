@@ -1,0 +1,290 @@
+[
+  {
+    "plain": {
+      "url": "https://en.wikipedia.org/wiki/Web_browser",
+      "loaded": true,
+      "title": "Web browser - Wikipedia",
+      "links": 1223,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://en.wikipedia.org/wiki/Web_browser",
+      "loaded": true,
+      "title": "Web browser - Wikipedia",
+      "links": 1223,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 1,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://github.com/",
+      "loaded": true,
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub · GitHub",
+      "links": 143,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://github.com/",
+      "loaded": true,
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub · GitHub",
+      "links": 143,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://stackoverflow.com/questions",
+      "loaded": true,
+      "title": "Newest Questions - Stack Overflow",
+      "links": 233,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://stackoverflow.com/questions",
+      "loaded": true,
+      "title": "Newest Questions - Stack Overflow",
+      "links": 233,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://developer.mozilla.org/en-US/",
+      "loaded": true,
+      "title": "MDN Web Docs",
+      "links": 160,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://developer.mozilla.org/en-US/",
+      "loaded": true,
+      "title": "MDN Web Docs",
+      "links": 160,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://www.bbc.com/news",
+      "loaded": true,
+      "title": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+      "links": 159,
+      "pageErrors": 1,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://www.bbc.com/news",
+      "loaded": true,
+      "title": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+      "links": 159,
+      "pageErrors": 1,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://www.nytimes.com/",
+      "loaded": true,
+      "title": "nytimes.com",
+      "links": 0,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://www.nytimes.com/",
+      "loaded": true,
+      "title": "nytimes.com",
+      "links": 0,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://www.reddit.com/",
+      "loaded": true,
+      "title": "Reddit - Prove your humanity",
+      "links": 6,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://www.reddit.com/",
+      "loaded": true,
+      "title": "Reddit - Prove your humanity",
+      "links": 6,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://www.amazon.com/",
+      "loaded": true,
+      "title": "Amazon.com. Spend less. Smile more.",
+      "links": 184,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://www.amazon.com/",
+      "loaded": true,
+      "title": "Amazon.com. Spend less. Smile more.",
+      "links": 186,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://www.youtube.com/",
+      "loaded": true,
+      "title": "YouTube",
+      "links": 8,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://www.youtube.com/",
+      "loaded": true,
+      "title": "YouTube",
+      "links": 8,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://www.espn.com/",
+      "loaded": true,
+      "title": "ESPN India - Serving Sports Fans. Anytime. Anywhere.",
+      "links": 324,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://www.espn.com/",
+      "loaded": true,
+      "title": "ESPN India - Serving Sports Fans. Anytime. Anywhere.",
+      "links": 324,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 1,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://www.imdb.com/",
+      "loaded": true,
+      "title": "403 Forbidden",
+      "links": 0,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://www.imdb.com/",
+      "loaded": true,
+      "title": "403 Forbidden",
+      "links": 0,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  },
+  {
+    "plain": {
+      "url": "https://weather.com/",
+      "loaded": true,
+      "title": "Challenge Validation",
+      "links": 0,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "nullify": {
+      "url": "https://weather.com/",
+      "loaded": true,
+      "title": "Challenge Validation",
+      "links": 0,
+      "pageErrors": 0,
+      "nullifyErrors": 0
+    },
+    "did": {
+      "blocked": 0,
+      "removed": 0,
+      "reported": 0,
+      "reasons": []
+    }
+  }
+]

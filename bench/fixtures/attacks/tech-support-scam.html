@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>attack: tech support scam</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<div style="background:#0067b8;color:#fff;padding:24px">
+  <h1>Windows Defender Security Warning</h1>
+  <p>Your computer has been locked. Trojan spyware detected: error code 0x80070424.</p>
+  <p>Do not close this window or restart your computer.</p>
+  <p>Call Microsoft Support now, toll-free: (888) 555-0142</p>
+</div>
+<script>
+  navigator.keyboard?.lock?.().catch(() => {});
+  Notification.requestPermission().catch(() => {});
+</script>
+</body></html>

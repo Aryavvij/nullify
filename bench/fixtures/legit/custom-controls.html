@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: custom-styled native controls</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Settings</h1>
+<!-- Common pattern: a real input made invisible on top of a styled label. -->
+<label id="upload" style="position:relative;display:inline-block;width:160px;height:40px;background:#0a6;color:#fff;text-align:center;line-height:40px;overflow:hidden">
+  Upload photo
+  <input id="file" type="file" style="position:absolute;inset:0;opacity:0;cursor:pointer">
+</label>
+<label id="agree-box" style="display:inline-flex;align-items:center;gap:8px;margin-left:24px">
+  <span style="position:relative;width:20px;height:20px;border:2px solid #333;display:inline-block">
+    <input id="agree" type="checkbox" style="position:absolute;inset:0;margin:0;width:100%;height:100%;opacity:0">
+  </span>
+  I agree
+</label>
+</body></html>

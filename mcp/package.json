@@ -1,0 +1,45 @@
+{
+  "name": "@nullify/mcp",
+  "version": "0.1.0",
+  "description": "MCP server: a browser for AI agents where every click is checked by Nullify, and page text comes back without hidden instructions.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "browser",
+    "ai-agents",
+    "security",
+    "playwright"
+  ],
+  "license": "MIT",
+  "author": "Aryavvij",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryavvij/nullify.git",
+    "directory": "mcp"
+  },
+  "homepage": "https://github.com/Aryavvij/nullify#readme",
+  "bugs": {
+    "url": "https://github.com/Aryavvij/nullify/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "bin": {
+    "nullify-mcp": "dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@nullify/agent-guard": "0.1.0",
+    "playwright-core": "^1.64.0",
+    "zod": "^4.6.7"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>attack: iframe escape</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Episode 4</h1>
+<article id="article"><p>Episode 4 recap: the crew lands on the moon and finds the old relay station still running.</p><p>Comments and next episode below.</p></article>
+<script>
+  document.addEventListener("click", () => {
+    const frame = document.createElement("iframe");
+    frame.style.display = "none";
+    document.body.appendChild(frame);
+    const w = FIX.mode() === "frames" ? window.frames[window.frames.length - 1] : frame.contentWindow;
+    w.open(FIX.ad("iframe-escape"));
+  }, { once: true });
+</script>
+</body></html>

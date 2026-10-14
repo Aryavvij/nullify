@@ -1,0 +1,10 @@
+{
+  "name": "@nullify/bench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Attack and legit fixtures, plus the NullBench runner.",
+  "dependencies": {
+    "@nullify/agent-guard": "0.1.0"
+  }
+}

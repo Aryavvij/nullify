@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>attack: redirect on click</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Episode 4</h1>
+<article id="article"><p>Episode 4 recap: the crew lands on the moon and finds the old relay station still running.</p><p>Comments and next episode below.</p></article>
+<script>
+  document.addEventListener("click", () => { location.href = FIX.scam("redirect"); });
+</script>
+</body></html>

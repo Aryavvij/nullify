@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nullify</title>
+  <link rel="stylesheet" href="ui.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="brand">
+    <img src="icons/icon-32.png" alt="" width="20" height="20">
+    <span>Nullify</span>
+  </header>
+
+  <section class="site">
+    <div>
+      <div class="muted">This site</div>
+      <div id="site" class="site-name">…</div>
+    </div>
+    <label class="switch" title="Protection on this site">
+      <input id="enabled" type="checkbox" checked>
+      <span class="track" aria-hidden="true"></span>
+      <span class="sr">Protection on this site</span>
+    </label>
+  </section>
+
+  <p id="note" class="note" hidden></p>
+
+  <section id="scam" class="scam" hidden>
+    <strong>This page looks like a scam</strong>
+    Don't call any number or enter details here.
+  </section>
+
+  <section class="count">
+    <span id="count" class="big">0</span>
+    <span id="count-label" class="muted">things blocked on this page</span>
+  </section>
+
+  <ol id="events" class="events"></ol>
+  <p id="empty" class="empty muted">Nothing has tried anything on this page so far.</p>
+
+  <button id="replay" class="primary" type="button">See what happened</button>
+  <script src="popup.js"></script>
+</body>
+</html>

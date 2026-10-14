@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: sso redirect</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Redirecting to your login provider…</h1>
+<script>setTimeout(() => location.replace(FIX.url("idp.test", "/landing.html?sso")), 200);</script>
+</body></html>

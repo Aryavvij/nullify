@@ -1,0 +1,36 @@
+{
+  "name": "nullify",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "core",
+    "agent-guard",
+    "mcp",
+    "extension",
+    "bench"
+  ],
+  "scripts": {
+    "build": "tsc -b core agent-guard mcp && node scripts/build.mjs",
+    "typecheck": "tsc -b core agent-guard mcp && tsc -p extension && tsc -p bench",
+    "test": "npm run build && npm run test:unit && npm run test:e2e",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test -c bench/playwright.config.ts",
+    "test:python": "cd python && uv run pytest -q",
+    "test:all": "npm test && npm run test:python",
+    "nullbench": "npm run build && node bench/dist/nullbench.mjs",
+    "screenshots": "npm run build && node scripts/capture-ui.mjs",
+    "demo": "npm run build && node scripts/record-demo.mjs",
+    "compare:ublock": "npm run build && node bench/dist/compare.mjs",
+    "package:extension": "npm run build && node scripts/package-extension.mjs",
+    "store:assets": "npm run build && node scripts/store-assets.mjs",
+    "check:real-sites": "npm run build && node scripts/real-site-check.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/chrome": "^0.1.0",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.28.0",
+    "typescript": "^5.9.0",
+    "vitest": "^5.0.4"
+  }
+}

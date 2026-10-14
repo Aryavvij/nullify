@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: delegated payment button</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Checkout</h1>
+<button data-pay>Pay with Wallet</button>
+<script>
+  // Event delegation from document (jQuery / React-root style), not a listener on the button.
+  document.addEventListener("click", (e) => {
+    if (e.target.closest("[data-pay]")) window.open(FIX.url("pay.test", "/landing.html?pay"), "pay", "width=500,height=700");
+  });
+</script>
+</body></html>

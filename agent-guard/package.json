@@ -1,0 +1,49 @@
+{
+  "name": "@nullify/agent-guard",
+  "version": "0.1.0",
+  "description": "Stops AI browser agents from being clickjacked: every Playwright click lands on what is visible, or is refused with a reason the agent can act on.",
+  "keywords": [
+    "playwright",
+    "ai-agents",
+    "browser-agents",
+    "computer-use",
+    "clickjacking",
+    "security",
+    "prompt-injection"
+  ],
+  "license": "MIT",
+  "author": "Aryavvij",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryavvij/nullify.git",
+    "directory": "agent-guard"
+  },
+  "homepage": "https://github.com/Aryavvij/nullify#readme",
+  "bugs": {
+    "url": "https://github.com/Aryavvij/nullify/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@nullify/core": "0.1.0"
+  },
+  "peerDependencies": {
+    "playwright-core": ">=1.40.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,44 @@
+main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; display: grid; gap: 14px; }
+.top { display: flex; align-items: center; justify-content: space-between; }
+h1 { font-size: 24px; letter-spacing: -0.01em; }
+
+.page { display: grid; gap: 12px; margin-top: 16px; }
+.page-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.page-head h2 { font-size: 14px; font-weight: 600; word-break: break-all; }
+
+.card { border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: grid; gap: 10px; background: var(--bg); }
+.card h3 { font-size: 14px; }
+.card .story { color: var(--muted); }
+
+/* The chain: page -> who -> tried -> verdict */
+.chain { display: flex; flex-wrap: wrap; align-items: stretch; gap: 6px; }
+.step {
+  flex: 1 1 140px; min-width: 0; padding: 8px 10px; border-radius: 8px;
+  background: var(--surface); display: grid; gap: 2px;
+}
+.step .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.step .value { font-weight: 600; overflow-wrap: anywhere; }
+.arrow { align-self: center; color: var(--muted); flex: none; }
+.step.verdict { flex: 0 0 auto; background: var(--accent-soft); color: var(--accent); justify-content: center; align-content: center; }
+.step.verdict .value { font-size: 15px; }
+
+.scam { margin-top: 4px; }
+.empty { margin-top: 24px; }
+
+/* Replay animation: each step slides in, card by card. */
+.animate .step, .animate .arrow {
+  animation: step-in 0.32s ease both;
+  animation-delay: calc(var(--card, 0) * 700ms + var(--i, 0) * 160ms);
+}
+@keyframes step-in {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate .step, .animate .arrow { animation: none; }
+}
+
+@media (max-width: 560px) {
+  .arrow { transform: rotate(90deg); width: 100%; text-align: center; }
+  .step { flex-basis: 100%; }
+}

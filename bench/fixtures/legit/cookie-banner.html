@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: cookie banner</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>News</h1>
+<p>Today's headlines.</p>
+<div id="banner" style="position:fixed;left:0;right:0;bottom:0;background:#222;color:#fff;padding:16px;z-index:9999">
+  We use cookies. <button id="accept">Accept</button>
+</div>
+<script>document.getElementById("accept").onclick = () => { document.getElementById("banner").hidden = true; };</script>
+</body></html>

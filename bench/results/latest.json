@@ -1,0 +1,1895 @@
+{
+  "meta": {
+    "date": "2026-10-13",
+    "chromium": "156.0.8078.4",
+    "playwright": "1.64.0",
+    "os": "darwin 27.0.0 arm64"
+  },
+  "configs": [
+    {
+      "id": "vision/none",
+      "label": "Vision agent (clicks coordinates)",
+      "driver": "vision",
+      "protection": "none"
+    },
+    {
+      "id": "vision/nullify",
+      "label": "Vision agent (clicks coordinates)",
+      "driver": "vision",
+      "protection": "nullify"
+    },
+    {
+      "id": "dom/none",
+      "label": "DOM agent (clicks elements)",
+      "driver": "dom",
+      "protection": "none"
+    },
+    {
+      "id": "dom/nullify",
+      "label": "DOM agent (clicks elements)",
+      "driver": "dom",
+      "protection": "nullify"
+    },
+    {
+      "id": "cdp/none",
+      "label": "Raw CDP agent (browser-use style)",
+      "driver": "cdp",
+      "protection": "none"
+    },
+    {
+      "id": "cdp/nullify",
+      "label": "Raw CDP agent (browser-use style)",
+      "driver": "cdp",
+      "protection": "nullify"
+    },
+    {
+      "id": "person/none",
+      "label": "Person (real mouse)",
+      "driver": "vision",
+      "protection": "none"
+    },
+    {
+      "id": "person/extension",
+      "label": "Person (real mouse)",
+      "driver": "vision",
+      "protection": "extension"
+    }
+  ],
+  "rows": [
+    {
+      "config": "vision/none",
+      "scenario": "overlay-link",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1600.1050420000001
+    },
+    {
+      "config": "vision/none",
+      "scenario": "overlay-div",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1612.1406249999998
+    },
+    {
+      "config": "vision/none",
+      "scenario": "popunder",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1615.315083
+    },
+    {
+      "config": "vision/none",
+      "scenario": "rearm",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2450.415416
+    },
+    {
+      "config": "vision/none",
+      "scenario": "redirect",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1559.2095409999997
+    },
+    {
+      "config": "vision/none",
+      "scenario": "anchor-click",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1570.3156669999994
+    },
+    {
+      "config": "vision/none",
+      "scenario": "link-hijack",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1572.9184999999998
+    },
+    {
+      "config": "vision/none",
+      "scenario": "anchor-dispatch",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1540.4403750000006
+    },
+    {
+      "config": "vision/none",
+      "scenario": "form-blank",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1554.9001660000004
+    },
+    {
+      "config": "vision/none",
+      "scenario": "iframe-cw",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1555.7492080000002
+    },
+    {
+      "config": "vision/none",
+      "scenario": "iframe-frames",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1571.2999579999996
+    },
+    {
+      "config": "vision/none",
+      "scenario": "blank-nav",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1545.145042
+    },
+    {
+      "config": "vision/none",
+      "scenario": "invisible-control",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1543.2572920000002
+    },
+    {
+      "config": "vision/none",
+      "scenario": "toctou-overlay",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2275.134166
+    },
+    {
+      "config": "vision/none",
+      "scenario": "late-invisible-control",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2275.922875
+    },
+    {
+      "config": "vision/none",
+      "scenario": "swap-on-move",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1536.4763329999987
+    },
+    {
+      "config": "vision/none",
+      "scenario": "oauth",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 354.55470799999966
+    },
+    {
+      "config": "vision/none",
+      "scenario": "oauth-async",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 649.1010409999999
+    },
+    {
+      "config": "vision/none",
+      "scenario": "payment",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 339.73612500000127
+    },
+    {
+      "config": "vision/none",
+      "scenario": "decoy-layer",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1534.2307500000006
+    },
+    {
+      "config": "vision/none",
+      "scenario": "target-blank",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 393.4490000000005
+    },
+    {
+      "config": "vision/none",
+      "scenario": "card",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 357.4180000000015
+    },
+    {
+      "config": "vision/none",
+      "scenario": "same-site-popup",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 349.79762500000106
+    },
+    {
+      "config": "vision/none",
+      "scenario": "checkout",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 50.64670899999874
+    },
+    {
+      "config": "vision/none",
+      "scenario": "video",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 49.04791699999987
+    },
+    {
+      "config": "vision/none",
+      "scenario": "cookie",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 33.52950000000055
+    },
+    {
+      "config": "vision/none",
+      "scenario": "menu",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 86.20766600000024
+    },
+    {
+      "config": "vision/none",
+      "scenario": "custom-controls",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 45.97162500000013
+    },
+    {
+      "config": "vision/none",
+      "scenario": "sso",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 226.3401670000003
+    },
+    {
+      "config": "vision/none",
+      "scenario": "counter",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 85.83283300000039
+    },
+    {
+      "config": "vision/none",
+      "scenario": "invisible-frame",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1571.7900829999999
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "overlay-link",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "invisible-control",
+      "ms": 1550.337834
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "overlay-div",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1589.2880409999998
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "popunder",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1539.4692080000004
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "rearm",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 2355.339167
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "redirect",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1551.6588749999992
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "link-hijack",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1552.482583000001
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "anchor-click",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1536.4833340000005
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "anchor-dispatch",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1539.9377499999991
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "iframe-cw",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1550.7782910000005
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "form-blank",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1550.2873330000002
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "iframe-frames",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1593.780417
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "blank-nav",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1536.661250000001
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "invisible-control",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "invisible-control",
+      "ms": 1548.729874999999
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "late-invisible-control",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "invisible-control",
+      "ms": 2246.2240410000013
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "toctou-overlay",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 2303.7347910000008
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "swap-on-move",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "invisible-control",
+      "ms": 1536.4578749999982
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "oauth",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 360.32012499999837
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "oauth-async",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 646.9690420000006
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "payment",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 343.71641600000294
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "decoy-layer",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "invisible-layer-over-control",
+      "ms": 1535.0423329999994
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "card",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 353.78849999999875
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "same-site-popup",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 343.04875000000175
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "target-blank",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 404.64058300000033
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "checkout",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 59.93395800000144
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "video",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 43.900541000002704
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "menu",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 50.13645800000086
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "cookie",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 64.57729099999779
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "sso",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 225.57004199999938
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "custom-controls",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 54.845124999999825
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "counter",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 84.44895899999756
+    },
+    {
+      "config": "vision/nullify",
+      "scenario": "invisible-frame",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1589.4311250000028
+    },
+    {
+      "config": "dom/none",
+      "scenario": "popunder",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1571.3138749999998
+    },
+    {
+      "config": "dom/none",
+      "scenario": "redirect",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1569.140374999999
+    },
+    {
+      "config": "dom/none",
+      "scenario": "overlay-div",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 3523.8910829999986
+    },
+    {
+      "config": "dom/none",
+      "scenario": "overlay-link",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 3522.219459
+    },
+    {
+      "config": "dom/none",
+      "scenario": "rearm",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 3516.911791999999
+    },
+    {
+      "config": "dom/none",
+      "scenario": "link-hijack",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1574.684416
+    },
+    {
+      "config": "dom/none",
+      "scenario": "anchor-click",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1562.5296669999989
+    },
+    {
+      "config": "dom/none",
+      "scenario": "anchor-dispatch",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1561.0118750000001
+    },
+    {
+      "config": "dom/none",
+      "scenario": "form-blank",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1563.7435830000031
+    },
+    {
+      "config": "dom/none",
+      "scenario": "iframe-cw",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1570.0903749999998
+    },
+    {
+      "config": "dom/none",
+      "scenario": "blank-nav",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1575.2376669999976
+    },
+    {
+      "config": "dom/none",
+      "scenario": "iframe-frames",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1575.6214580000014
+    },
+    {
+      "config": "dom/none",
+      "scenario": "toctou-overlay",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 4226.216790999999
+    },
+    {
+      "config": "dom/none",
+      "scenario": "invisible-control",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 3523.3594999999987
+    },
+    {
+      "config": "dom/none",
+      "scenario": "swap-on-move",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 3520.649708000001
+    },
+    {
+      "config": "dom/none",
+      "scenario": "oauth",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 366.02116599999863
+    },
+    {
+      "config": "dom/none",
+      "scenario": "late-invisible-control",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 4226.482416999999
+    },
+    {
+      "config": "dom/none",
+      "scenario": "oauth-async",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 670.8976670000011
+    },
+    {
+      "config": "dom/none",
+      "scenario": "payment",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 369.330541000003
+    },
+    {
+      "config": "dom/none",
+      "scenario": "card",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 367.4470419999998
+    },
+    {
+      "config": "dom/none",
+      "scenario": "target-blank",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 401.75095800000054
+    },
+    {
+      "config": "dom/none",
+      "scenario": "checkout",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 62.071625000000495
+    },
+    {
+      "config": "dom/none",
+      "scenario": "sso",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 223.65137500000128
+    },
+    {
+      "config": "dom/none",
+      "scenario": "same-site-popup",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 369.31966600000305
+    },
+    {
+      "config": "dom/none",
+      "scenario": "video",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 91.1864170000008
+    },
+    {
+      "config": "dom/none",
+      "scenario": "menu",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 104.3896249999998
+    },
+    {
+      "config": "dom/none",
+      "scenario": "cookie",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 65.06608299999789
+    },
+    {
+      "config": "dom/none",
+      "scenario": "custom-controls",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 91.20850000000064
+    },
+    {
+      "config": "dom/none",
+      "scenario": "counter",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 125.34679200000028
+    },
+    {
+      "config": "dom/none",
+      "scenario": "decoy-layer",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 3516.5716250000005
+    },
+    {
+      "config": "dom/none",
+      "scenario": "invisible-frame",
+      "type": "attack",
+      "verdict": "refused-by-playwright",
+      "ms": 3544.6982500000013
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "overlay-div",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "target-covered",
+      "ms": 1538.4137090000004
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "overlay-link",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "target-covered",
+      "ms": 1533.9353340000016
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "popunder",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1562.6016670000026
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "rearm",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "target-covered",
+      "ms": 1535.6732499999962
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "redirect",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1565.8426249999975
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "link-hijack",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1567.2069170000032
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "anchor-click",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1562.734540999998
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "anchor-dispatch",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1560.6596250000002
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "form-blank",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1563.6442919999972
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "iframe-cw",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1563.739625000002
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "iframe-frames",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1562.9164999999994
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "blank-nav",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1563.0297500000015
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "invisible-control",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "target-covered",
+      "ms": 1537.289374999993
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "toctou-overlay",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "target-covered",
+      "ms": 2257.8845410000067
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "swap-on-move",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "target-covered",
+      "ms": 1562.2159580000007
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "late-invisible-control",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "target-covered",
+      "ms": 2237.8715410000004
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "decoy-layer",
+      "type": "attack",
+      "verdict": "refused",
+      "detail": "target-covered",
+      "ms": 1535.7333750000034
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "oauth",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 368.8701250000013
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "oauth-async",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 675.885417000005
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "payment",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 368.38395799999853
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "target-blank",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 424.54954200000066
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "checkout",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 64.90204200000153
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "invisible-frame",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1576.321041999996
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "card",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 365.9067500000019
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "same-site-popup",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 366.53820899999846
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "sso",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 221.01495799999975
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "video",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 94.96920900000259
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "menu",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 146.40112499999668
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "cookie",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 94.45233300000109
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "custom-controls",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 105.62966600000073
+    },
+    {
+      "config": "dom/nullify",
+      "scenario": "counter",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 146.24329200000648
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "overlay-div",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1556.6009580000027
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "overlay-link",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1551.152667000002
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "popunder",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1541.7017090000008
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "rearm",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2366.751083000003
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "redirect",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1555.5650840000017
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "link-hijack",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1552.8539999999994
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "anchor-click",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1540.1958749999976
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "anchor-dispatch",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1538.547458000001
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "form-blank",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1555.8924590000024
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "iframe-cw",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1564.828999999998
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "iframe-frames",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1571.8721670000014
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "blank-nav",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1538.0787500000006
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "swap-on-move",
+      "type": "attack",
+      "verdict": "n/a",
+      "detail": "raw CDP clicks don't move the pointer first, so this trap never fires",
+      "ms": 0
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "invisible-control",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1558.6633750000037
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "toctou-overlay",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2276.384208000003
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "late-invisible-control",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2277.259291000002
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "decoy-layer",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1533.3553329999995
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "oauth",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 348.83637499999895
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "payment",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 336.822666
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "oauth-async",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 676.5191249999989
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "target-blank",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 375.51895800000057
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "card",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 342.11579200000415
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "invisible-frame",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1548.7049589999951
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "checkout",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 45.29716600000393
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "video",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 48.01770899999974
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "menu",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 50.81058299999859
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "cookie",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 35.392165999997815
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "custom-controls",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 41.21729200000118
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "sso",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 220.72795800000313
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "same-site-popup",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 336.6994580000028
+    },
+    {
+      "config": "cdp/none",
+      "scenario": "counter",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 49.102624999999534
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "overlay-link",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1555.8132079999996
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "popunder",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1548.2032089999993
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "overlay-div",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1586.5482919999995
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "rearm",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 2354.5548750000016
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "redirect",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1555.198083000003
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "anchor-click",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1551.605792000002
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "link-hijack",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1559.204165999996
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "anchor-dispatch",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1536.900582999995
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "iframe-frames",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1558.7860409999994
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "form-blank",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1558.8223750000034
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "iframe-cw",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1555.2859580000004
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "blank-nav",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1537.5329580000034
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "swap-on-move",
+      "type": "attack",
+      "verdict": "n/a",
+      "detail": "raw CDP clicks don't move the pointer first, so this trap never fires",
+      "ms": 0
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "invisible-control",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1550.6412079999936
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "late-invisible-control",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 2279.2938339999964
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "toctou-overlay",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 2308.193459000002
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "decoy-layer",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1542.4680000000008
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "oauth",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 366.1998749999984
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "payment",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 348.2985419999968
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "oauth-async",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 678.046875
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "card",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 355.8219590000008
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "invisible-frame",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1559.794167
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "target-blank",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 383.0226249999978
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "checkout",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 50.00195800000074
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "video",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 45.363666999997804
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "menu",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 49.66441699999996
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "cookie",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 37.93212499999936
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "sso",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 224.94054200000392
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "same-site-popup",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 353.7664580000055
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "custom-controls",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 62.04529199999524
+    },
+    {
+      "config": "cdp/nullify",
+      "scenario": "counter",
+      "type": "legit",
+      "verdict": "completed",
+      "interventions": 0,
+      "ms": 90.8214999999982
+    },
+    {
+      "config": "person/none",
+      "scenario": "overlay-link",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1565.5775829999984
+    },
+    {
+      "config": "person/none",
+      "scenario": "popunder",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1560.2113329999993
+    },
+    {
+      "config": "person/none",
+      "scenario": "overlay-div",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1583.2617499999978
+    },
+    {
+      "config": "person/none",
+      "scenario": "rearm",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2353.212375000003
+    },
+    {
+      "config": "person/none",
+      "scenario": "anchor-click",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1549.8827080000046
+    },
+    {
+      "config": "person/none",
+      "scenario": "redirect",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1562.4056249999994
+    },
+    {
+      "config": "person/none",
+      "scenario": "link-hijack",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1568.1498330000031
+    },
+    {
+      "config": "person/none",
+      "scenario": "anchor-dispatch",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1535.5239999999976
+    },
+    {
+      "config": "person/none",
+      "scenario": "form-blank",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1549.324790999999
+    },
+    {
+      "config": "person/none",
+      "scenario": "iframe-frames",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1563.169750000001
+    },
+    {
+      "config": "person/none",
+      "scenario": "iframe-cw",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1562.7475420000046
+    },
+    {
+      "config": "person/none",
+      "scenario": "blank-nav",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1535.856166999998
+    },
+    {
+      "config": "person/none",
+      "scenario": "invisible-control",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1545.7990419999987
+    },
+    {
+      "config": "person/none",
+      "scenario": "late-invisible-control",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2275.6697920000006
+    },
+    {
+      "config": "person/none",
+      "scenario": "toctou-overlay",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2276.2344999999987
+    },
+    {
+      "config": "person/none",
+      "scenario": "swap-on-move",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1535.9959589999999
+    },
+    {
+      "config": "person/none",
+      "scenario": "oauth",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 351.8301670000001
+    },
+    {
+      "config": "person/none",
+      "scenario": "oauth-async",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 643.9596250000031
+    },
+    {
+      "config": "person/none",
+      "scenario": "payment",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 339.0977500000008
+    },
+    {
+      "config": "person/none",
+      "scenario": "decoy-layer",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1533.1166250000024
+    },
+    {
+      "config": "person/none",
+      "scenario": "card",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 346.4994999999981
+    },
+    {
+      "config": "person/none",
+      "scenario": "target-blank",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 385.82600000000093
+    },
+    {
+      "config": "person/none",
+      "scenario": "same-site-popup",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 338.7560830000002
+    },
+    {
+      "config": "person/none",
+      "scenario": "checkout",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 51.43033299999661
+    },
+    {
+      "config": "person/none",
+      "scenario": "video",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 43.277916999999434
+    },
+    {
+      "config": "person/none",
+      "scenario": "menu",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 51.8713329999955
+    },
+    {
+      "config": "person/none",
+      "scenario": "cookie",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 35.24374999999418
+    },
+    {
+      "config": "person/none",
+      "scenario": "sso",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 221.62429200000042
+    },
+    {
+      "config": "person/none",
+      "scenario": "custom-controls",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 48.593708999993396
+    },
+    {
+      "config": "person/none",
+      "scenario": "counter",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 70.66887500000303
+    },
+    {
+      "config": "person/none",
+      "scenario": "invisible-frame",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1561.9336669999975
+    },
+    {
+      "config": "person/extension",
+      "scenario": "overlay-link",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1666.4384580000042
+    },
+    {
+      "config": "person/extension",
+      "scenario": "overlay-div",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1718.8950830000103
+    },
+    {
+      "config": "person/extension",
+      "scenario": "popunder",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1668.9694579999923
+    },
+    {
+      "config": "person/extension",
+      "scenario": "rearm",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 2485.1596250000002
+    },
+    {
+      "config": "person/extension",
+      "scenario": "redirect",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1600.775874999992
+    },
+    {
+      "config": "person/extension",
+      "scenario": "link-hijack",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1611.4837499999994
+    },
+    {
+      "config": "person/extension",
+      "scenario": "anchor-click",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1618.9896249999874
+    },
+    {
+      "config": "person/extension",
+      "scenario": "anchor-dispatch",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1564.2938330000034
+    },
+    {
+      "config": "person/extension",
+      "scenario": "form-blank",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1812.4607079999987
+    },
+    {
+      "config": "person/extension",
+      "scenario": "iframe-cw",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1803.206542
+    },
+    {
+      "config": "person/extension",
+      "scenario": "iframe-frames",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1780.7018340000068
+    },
+    {
+      "config": "person/extension",
+      "scenario": "blank-nav",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 1556.6081250000134
+    },
+    {
+      "config": "person/extension",
+      "scenario": "invisible-control",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1600.1396249999962
+    },
+    {
+      "config": "person/extension",
+      "scenario": "swap-on-move",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1571.6276669999934
+    },
+    {
+      "config": "person/extension",
+      "scenario": "toctou-overlay",
+      "type": "attack",
+      "verdict": "blocked",
+      "ms": 2274.3175000000047
+    },
+    {
+      "config": "person/extension",
+      "scenario": "late-invisible-control",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 2454.334625000003
+    },
+    {
+      "config": "person/extension",
+      "scenario": "oauth",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 613.1504580000037
+    },
+    {
+      "config": "person/extension",
+      "scenario": "decoy-layer",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1559.5109170000069
+    },
+    {
+      "config": "person/extension",
+      "scenario": "payment",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 461.5259170000063
+    },
+    {
+      "config": "person/extension",
+      "scenario": "oauth-async",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 818.8628750000062
+    },
+    {
+      "config": "person/extension",
+      "scenario": "invisible-frame",
+      "type": "attack",
+      "verdict": "hijacked",
+      "ms": 1625.5789159999986
+    },
+    {
+      "config": "person/extension",
+      "scenario": "target-blank",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 425.177125000002
+    },
+    {
+      "config": "person/extension",
+      "scenario": "checkout",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 170.19362499999988
+    },
+    {
+      "config": "person/extension",
+      "scenario": "same-site-popup",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 469.8794590000034
+    },
+    {
+      "config": "person/extension",
+      "scenario": "card",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 517.1714159999974
+    },
+    {
+      "config": "person/extension",
+      "scenario": "sso",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 303.47945900000923
+    },
+    {
+      "config": "person/extension",
+      "scenario": "cookie",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 247.04208300000755
+    },
+    {
+      "config": "person/extension",
+      "scenario": "video",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 445.8684590000048
+    },
+    {
+      "config": "person/extension",
+      "scenario": "menu",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 365.8005419999972
+    },
+    {
+      "config": "person/extension",
+      "scenario": "custom-controls",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 245.84895899999538
+    },
+    {
+      "config": "person/extension",
+      "scenario": "counter",
+      "type": "legit",
+      "verdict": "completed",
+      "ms": 145.86662500000966
+    }
+  ],
+  "overhead": {
+    "clickMs": {
+      "vision": {
+        "without": 1.6889585000026273,
+        "with": 2.3869794999991427
+      },
+      "dom": {
+        "without": 19.79664600000251,
+        "with": 30.214458000002196
+      },
+      "cdp": {
+        "without": 2.224207999999635,
+        "with": 2.299750000005588
+      }
+    },
+    "domChecksMs": 1.5429374999948777,
+    "loadMs": {
+      "/hello.html": {
+        "without": 2.8499999940395355,
+        "with": 3.300000011920929
+      },
+      "/attacks/hidden-instructions.html": {
+        "without": 3.9000000059604645,
+        "with": 3.9000000059604645
+      },
+      "/legit/video-player.html": {
+        "without": 4,
+        "with": 4.0999999940395355
+      }
+    },
+    "extensionLoadMs": {
+      "/hello.html": {
+        "without": 4.5,
+        "with": 5.700000017881393
+      },
+      "/attacks/hidden-instructions.html": {
+        "without": 5.049999997019768,
+        "with": 6.5
+      },
+      "/legit/video-player.html": {
+        "without": 5.549999997019768,
+        "with": 6.600000008940697
+      }
+    }
+  }
+}

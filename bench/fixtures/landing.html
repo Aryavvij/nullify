@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>landing</title>
+<style>
+  body { font: 18px/1.5 system-ui, sans-serif; margin: 48px; color: #12141a; }
+  h1 { font-size: 40px; margin: 0 0 8px; }
+  .unwanted h1 { color: #b91c1c; }
+</style>
+</head>
+<body>
+<h1 id="title">Landing page</h1>
+<p id="note">Stand-in for an ad, scam, login or payment page.</p>
+<script>
+  // Say plainly what kind of destination this stands for, so recordings and screenshots read clearly.
+  const host = location.hostname;
+  if (host.startsWith("ads.") || host.startsWith("scam.")) {
+    document.body.className = "unwanted";
+    document.getElementById("title").textContent = host.startsWith("ads.") ? "An ad tab you didn't ask for" : "A page you didn't ask for";
+    document.getElementById("note").textContent = `Opened from ${new URLSearchParams(location.search).get("from") ?? "another page"} on a local test site.`;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>attack: re-arming overlay</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Watch: Episode 4</h1>
+<div class="player" id="player"><video id="video"></video></div>
+<script>
+  function arm() {
+    const trap = document.createElement("div");
+    trap.className = "rearm-layer";
+    trap.style.cssText = "position:fixed;inset:0;z-index:2147483647;background:rgba(0,0,0,0)";
+    trap.addEventListener("click", () => { window.open(FIX.ad("rearm")); trap.remove(); });
+    document.body.appendChild(trap);
+  }
+  arm();
+  setInterval(() => { if (!document.querySelector(".rearm-layer")) arm(); }, 300);
+</script>
+</body></html>

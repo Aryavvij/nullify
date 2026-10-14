@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: oauth popup</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Sign in</h1>
+<button id="login">Sign in with IdP</button>
+<script>
+  // ?mode=async: the popup opens after an await, like libraries that fetch config first.
+  document.getElementById("login").addEventListener("click", async () => {
+    if (FIX.mode() === "async") await new Promise((r) => setTimeout(r, 300));
+    window.open(FIX.url("idp.test", "/landing.html?oauth"), "oauth", "width=480,height=640");
+  });
+</script>
+</body></html>

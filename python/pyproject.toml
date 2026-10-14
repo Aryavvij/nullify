@@ -1,0 +1,40 @@
+[project]
+name = "nullify-guard"
+version = "0.1.0"
+description = "Stops AI browser agents from being clickjacked: every Playwright click lands on what is visible, or is refused with a reason."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Aryavvij" }]
+keywords = ["playwright", "ai-agents", "browser-agents", "clickjacking", "security", "prompt-injection"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Internet :: WWW/HTTP :: Browsers",
+  "Topic :: Software Development :: Testing",
+]
+dependencies = ["playwright>=1.40"]
+
+[project.urls]
+Homepage = "https://github.com/Aryavvij/nullify"
+Issues = "https://github.com/Aryavvij/nullify/issues"
+
+[dependency-groups]
+# Pinned to the Playwright build already cached on this machine, so tests don't download a new browser.
+dev = ["pytest>=8", "playwright==1.62.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nullify_guard"]
+# core.iife.js is copied in by `npm run build` and is git-ignored.
+artifacts = ["src/nullify_guard/core.iife.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

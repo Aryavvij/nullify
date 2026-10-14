@@ -1,0 +1,37 @@
+body { width: 340px; padding: 14px; display: grid; gap: 12px; }
+
+.site {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 12px; border-radius: var(--radius); background: var(--surface);
+}
+.site-name { font-weight: 600; word-break: break-all; }
+
+.switch { position: relative; display: inline-block; width: 38px; height: 22px; flex: none; }
+.switch input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+.switch .track {
+  position: absolute; inset: 0; border-radius: 999px; background: var(--line); transition: background 0.15s;
+  pointer-events: none; /* decoration only: the real checkbox underneath takes the click */
+}
+.switch .track::after {
+  content: ""; position: absolute; top: 3px; left: 3px; width: 16px; height: 16px;
+  border-radius: 50%; background: #fff; transition: transform 0.15s;
+}
+.switch input:checked + .track { background: var(--ok); }
+.switch input:checked + .track::after { transform: translateX(16px); }
+.switch input:focus-visible + .track { outline: 2px solid var(--text); outline-offset: 2px; }
+.switch input:disabled + .track { opacity: 0.4; }
+
+.note { color: var(--muted); }
+.note button { margin-left: 6px; }
+
+.count { display: flex; align-items: baseline; gap: 8px; }
+.big { font-size: 30px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+
+.events { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.events li { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; }
+.events .title { font-weight: 600; }
+.events .meta { color: var(--muted); font-size: 12px; }
+.events .dest { color: var(--accent); font-weight: 600; }
+
+.empty { margin-top: -4px; }
+#replay { width: 100%; }

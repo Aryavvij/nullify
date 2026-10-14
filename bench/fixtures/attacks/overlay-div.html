@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>attack: overlay div</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Watch: Episode 4</h1>
+<div class="player" id="player"><video id="video"></video></div>
+<script>
+  const trap = document.createElement("div");
+  trap.className = "click-layer";
+  trap.style.cssText = "position:fixed;inset:0;z-index:2147483647;background:transparent";
+  trap.addEventListener("click", () => window.open(FIX.ad("overlay-div")));
+  document.body.appendChild(trap);
+</script>
+</body></html>

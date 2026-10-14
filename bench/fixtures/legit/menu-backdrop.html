@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: menu backdrop</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Dashboard</h1>
+<button id="menu-btn">Account ▾</button>
+<ul id="menu" hidden style="position:absolute;z-index:1001;background:#fff;border:1px solid #ccc;list-style:none;padding:8px;margin:0">
+  <li>Profile</li><li>Log out</li>
+</ul>
+<script>
+  // Material-style menu: an invisible full-screen backdrop closes the menu on outside click.
+  const menu = document.getElementById("menu");
+  document.getElementById("menu-btn").addEventListener("click", () => {
+    menu.hidden = false;
+    const backdrop = document.createElement("div");
+    backdrop.id = "backdrop";
+    backdrop.style.cssText = "position:fixed;inset:0;z-index:1000;background:transparent";
+    backdrop.addEventListener("click", () => { menu.hidden = true; backdrop.remove(); });
+    document.body.appendChild(backdrop);
+  });
+</script>
+</body></html>

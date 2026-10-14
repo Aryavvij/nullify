@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>attack: link hijack</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Episode 4</h1>
+<p><a id="next" href="/next.html">Next episode</a></p>
+<script>
+  document.getElementById("next").addEventListener("click", () => window.open(FIX.ad("link-hijack")));
+</script>
+</body></html>

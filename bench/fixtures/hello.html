@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nullify fixture: hello</title>
+</head>
+<body>
+  <h1>Hello fixture</h1>
+  <p>Phase 0 smoke test: checks that the Nullify engine loaded before this script ran.</p>
+  <p id="status">checking…</p>
+  <script>
+    // Page scripts run after document_start injection, so the engine must already be here.
+    document.getElementById("status").textContent =
+      document.documentElement.dataset.nullify ? "nullify: " + document.documentElement.dataset.nullify : "nullify: not loaded";
+  </script>
+</body>
+</html>

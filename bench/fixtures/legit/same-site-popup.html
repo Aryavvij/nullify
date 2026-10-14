@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: same-site photo popup</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Gallery</h1>
+<div class="thumb" id="thumb" style="width:200px;height:120px;background:#8ab"></div>
+<script>
+  document.getElementById("thumb").addEventListener("click", () => window.open("/photo.html", "photo", "width=800,height=600"));
+</script>
+</body></html>

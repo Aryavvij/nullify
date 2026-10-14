@@ -1,0 +1,945 @@
+{
+  "meta": {
+    "date": "2026-10-13",
+    "chromium": "156.0.8078.4",
+    "ubol": "2026.1012.1545"
+  },
+  "rows": [
+    {
+      "setup": "none",
+      "scenario": "overlay-div",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "overlay-div",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "overlay-div",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "overlay-div",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "none",
+      "scenario": "overlay-div",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "overlay-div",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "overlay-div",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "overlay-div",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "none",
+      "scenario": "overlay-link",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "overlay-link",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "overlay-link",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "overlay-link",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "none",
+      "scenario": "overlay-link",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "overlay-link",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "overlay-link",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "overlay-link",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "none",
+      "scenario": "popunder",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "popunder",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "popunder",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "popunder",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "popunder",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "popunder",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "popunder",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "popunder",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "rearm",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "rearm",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "rearm",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "rearm",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "rearm",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "rearm",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "rearm",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "rearm",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "redirect",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "redirect",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "redirect",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "redirect",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "redirect",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "redirect",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "redirect",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "redirect",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "link-hijack",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "link-hijack",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "link-hijack",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "link-hijack",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "link-hijack",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "link-hijack",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "link-hijack",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "link-hijack",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "anchor-click",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "anchor-click",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "anchor-click",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "anchor-click",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "anchor-click",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "anchor-click",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "anchor-click",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "anchor-click",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "anchor-dispatch",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "anchor-dispatch",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "anchor-dispatch",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "anchor-dispatch",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "anchor-dispatch",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "anchor-dispatch",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "anchor-dispatch",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "anchor-dispatch",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "form-blank",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "form-blank",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "form-blank",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "form-blank",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "form-blank",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "form-blank",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "form-blank",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "form-blank",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "iframe-cw",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "iframe-cw",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "iframe-cw",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "iframe-cw",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "iframe-cw",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "iframe-cw",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "iframe-cw",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "iframe-cw",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "iframe-frames",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "iframe-frames",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "iframe-frames",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "iframe-frames",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "iframe-frames",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "iframe-frames",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "iframe-frames",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "iframe-frames",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "blank-nav",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "blank-nav",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "blank-nav",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "blank-nav",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "blank-nav",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "blank-nav",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "blank-nav",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "blank-nav",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "toctou-overlay",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "toctou-overlay",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "toctou-overlay",
+      "dest": "unknown",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "ubol",
+      "scenario": "toctou-overlay",
+      "dest": "unknown",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "toctou-overlay",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "none",
+      "scenario": "toctou-overlay",
+      "dest": "known",
+      "outcome": "hijacked"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "toctou-overlay",
+      "dest": "known",
+      "outcome": "prevented"
+    },
+    {
+      "setup": "nullify",
+      "scenario": "oauth",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "oauth",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "toctou-overlay",
+      "dest": "known",
+      "outcome": "tab-or-page-lost"
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "oauth",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "oauth-async",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "oauth-async",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "oauth",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "payment",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "payment",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "oauth-async",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "oauth-async",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "target-blank",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "target-blank",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "payment",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "payment",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "card",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "card",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "target-blank",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "target-blank",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "same-site-popup",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "same-site-popup",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "card",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "checkout",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "checkout",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "card",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "sso",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "sso",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "same-site-popup",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "video",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "video",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "same-site-popup",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "checkout",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "menu",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "checkout",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "menu",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "cookie",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "sso",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "cookie",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "sso",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "custom-controls",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "video",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "custom-controls",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "video",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "nullify",
+      "scenario": "counter",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "none",
+      "scenario": "counter",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "menu",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "menu",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "cookie",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "cookie",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "custom-controls",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "custom-controls",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol+nullify",
+      "scenario": "counter",
+      "dest": "legit",
+      "completed": true
+    },
+    {
+      "setup": "ubol",
+      "scenario": "counter",
+      "dest": "legit",
+      "completed": true
+    }
+  ]
+}

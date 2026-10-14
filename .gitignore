@@ -1,0 +1,14 @@
+node_modules
+dist
+*.tsbuildinfo
+test-results
+playwright-report
+.DS_Store
+.venv
+__pycache__
+.pytest_cache
+*.egg-info
+python/src/nullify_guard/core.iife.js
+docs/demo/.clips
+bench/.vendor
+release

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>legit: video player</title>
+<link rel="stylesheet" href="/common.css">
+<script src="/common.js"></script>
+</head>
+<body>
+<h1>Watch</h1>
+<div class="player" id="player" data-playing="false">
+  <video id="video"></video>
+  <!-- Real players put a transparent click layer over the video to toggle playback. -->
+  <div id="click-layer" style="position:absolute;inset:0"></div>
+</div>
+<script>
+  const player = document.getElementById("player");
+  document.getElementById("click-layer").addEventListener("click", () => {
+    player.dataset.playing = String(player.dataset.playing !== "true");
+  });
+</script>
+</body></html>
