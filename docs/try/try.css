@@ -1,0 +1,14 @@
+:root { color-scheme: light dark; --bg: #fff; --text: #12141a; --muted: #5c6370; --line: #e2e5ea; --ok: #0f8a4f; --warn: #b45309; }
+@media (prefers-color-scheme: dark) { :root { --bg: #111318; --text: #eceef2; --muted: #9aa2b1; --line: #2a2e38; --ok: #34d399; --warn: #fbbf24; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 28px; margin: 0 0 8px; }
+.muted { color: var(--muted); }
+.status { padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; margin: 16px 0; font-weight: 600; }
+.status.on { color: var(--ok); }
+.status.off { color: var(--warn); }
+.player { position: relative; width: 100%; max-width: 640px; aspect-ratio: 16 / 9; background: #000; border-radius: 10px; display: grid; place-items: center; color: #fff; font-size: 48px; user-select: none; }
+.layer { position: absolute; inset: 0; }
+.expect { border-left: 3px solid var(--line); padding: 4px 0 4px 14px; margin: 16px 0; }
+a { color: inherit; }
+ol li { margin: 6px 0; }

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try Nullify: redirect on click</title>
+<link rel="stylesheet" href="try.css">
+<script src="status.js"></script>
+</head>
+<body>
+<main>
+  <p><a href="./">← Try Nullify</a></p>
+  <h1>Click anywhere and get redirected</h1>
+  <p id="status" class="status">Checking…</p>
+  <article id="article">
+    <p>This page listens for any click and uses it to send the tab somewhere else, the way some streaming and download sites do. Click on this paragraph (not on a link).</p>
+    <p>Without Nullify, this tab goes to example.com. With Nullify, you stay here and the toolbar badge counts the stopped redirect.</p>
+  </article>
+</main>
+<script>
+  document.getElementById("article").addEventListener("click", () => {
+    location.href = "https://example.com/?from=nullify-try-redirect";
+  });
+</script>
+</body>
+</html>

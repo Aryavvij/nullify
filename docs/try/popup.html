@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try Nullify: invisible layer</title>
+<link rel="stylesheet" href="try.css">
+<script src="status.js"></script>
+</head>
+<body>
+<main>
+  <p><a href="./">← Try Nullify</a></p>
+  <h1>Invisible layer over a video player</h1>
+  <p id="status" class="status">Checking…</p>
+  <div class="player" id="player">▶
+    <!-- The trap: a transparent layer covering the player. Clicking "the video" really clicks this. -->
+    <div class="layer" id="layer"></div>
+  </div>
+  <div class="expect">
+    <p><b>Click the player.</b></p>
+    <p>Without Nullify, a new tab opens to example.com. With Nullify, nothing opens, the toolbar badge counts the block, and the invisible layer is removed, so a second click reaches the player.</p>
+  </div>
+  <div class="expect">
+    <p>Normal links keep working: <a id="normal" href="https://example.com/" target="_blank" rel="noopener">this link opens example.com in a new tab</a>, with or without Nullify.</p>
+  </div>
+</main>
+<script>
+  document.getElementById("layer").addEventListener("click", () => {
+    window.open("https://example.com/?from=nullify-try-popup", "_blank");
+  });
+</script>
+</body>
+</html>

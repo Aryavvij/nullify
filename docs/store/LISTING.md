@@ -34,6 +34,12 @@ Everything to paste into the developer dashboard. Images are in this folder; the
 **Small promo tile** (440×280): `promo-small-440x280.png`
 **Store icon:** packaged in the zip as `icons/icon-128.png` (96 px artwork, 16 px transparent padding).
 
+## Test instructions tab
+> No account or login needed. Nullify runs automatically on every page. To see it work, open https://aryavvij.github.io/nullify/try/ (two harmless test pages; the only place they try to send you is example.com):
+> 1. "Invisible layer over a video player": click the player. With Nullify, no tab opens and the toolbar badge shows the block; the normal link on the same page still opens in a new tab.
+> 2. "Click anywhere and get redirected": click the paragraph. With Nullify, the tab stays on the page.
+> The status line on each page says whether Nullify is active. Switch it off for the site from the toolbar popup to see what happens without it. Click the toolbar icon, then "See what happened", for a step-by-step replay of each block.
+
 ## Privacy practices tab
 
 **Single purpose description:**
