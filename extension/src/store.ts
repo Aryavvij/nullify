@@ -3,7 +3,7 @@
  * survives service-worker restarts, readable only by extension pages); the
  * per-site switch lives in chrome.storage.local.
  */
-import type { NullifyEvent } from "@nullify/core";
+import type { NullifyEvent } from "@nullifyads/core";
 
 export interface StoredEvent {
   kind: NullifyEvent["kind"];

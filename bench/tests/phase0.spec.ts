@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { guard } from "@nullify/agent-guard";
+import { guard } from "@nullifyads/agent-guard";
 
 test("Agent Guard injects core before page scripts run", async ({ page }) => {
   await guard(page);

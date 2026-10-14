@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { guard, NullifyBlockedError, type NullifyGuard } from "@nullify/agent-guard";
+import { guard, NullifyBlockedError, type NullifyGuard } from "@nullifyads/agent-guard";
 import { clicker } from "./cases.js";
 import { BASE } from "./env.js";
 

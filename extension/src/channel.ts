@@ -7,7 +7,7 @@
  * by the secret, so a page that starts listening later can't see or forge
  * them. Whichever script runs second completes the handshake.
  */
-import type { NullifyEvent } from "@nullify/core";
+import type { NullifyEvent } from "@nullifyads/core";
 
 /** Dispatched by the engine when it starts, in case the isolated script ran first. */
 export const MAIN_HELLO = "nullify:main-hello";

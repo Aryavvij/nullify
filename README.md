@@ -25,10 +25,10 @@ Added time per click: about 0.7 ms for coordinate clicks; about 1.5 ms of checks
 
 **AI agents on Playwright (Node):**
 ```bash
-npm install @nullify/agent-guard playwright-core
+npm install @nullifyads/agent-guard playwright-core
 ```
 ```ts
-import { guard, NullifyBlockedError } from "@nullify/agent-guard";
+import { guard, NullifyBlockedError } from "@nullifyads/agent-guard";
 const g = await guard(context);         // before navigating
 await page.mouse.click(x, y);           // throws NullifyBlockedError if it would hit something invisible
 const text = await g.visibleText(page); // page text without hidden instructions, for your model
@@ -37,7 +37,7 @@ Full API: [agent-guard/README.md](agent-guard/README.md)
 
 **AI agents on Playwright (Python):** `pip install nullify-guard`. See [python/README.md](python/README.md).
 
-**An MCP server with a protected browser** (e.g. for Claude Code): `claude mcp add nullify -- npx -y @nullify/mcp`. See [mcp/README.md](mcp/README.md).
+**An MCP server with a protected browser** (e.g. for Claude Code): `claude mcp add nullify -- npx -y @nullifyads/mcp`. See [mcp/README.md](mcp/README.md).
 
 **People (Chrome extension):** install from the Chrome Web Store once it's listed, or download the zip from the latest GitHub release and load it unpacked. The toolbar badge counts what was blocked, the popup explains it in plain words, and "See what happened" replays each block as a chain:
 
@@ -61,10 +61,10 @@ Full API: [agent-guard/README.md](agent-guard/README.md)
 ## Repository
 | Folder | What |
 |---|---|
-| `core/` | `@nullify/core`, the in-page engine |
-| `agent-guard/` | `@nullify/agent-guard`, protection for Playwright agents |
+| `core/` | `@nullifyads/core`, the in-page engine |
+| `agent-guard/` | `@nullifyads/agent-guard`, protection for Playwright agents |
 | `python/` | `nullify-guard`, the same for Playwright-Python |
-| `mcp/` | `@nullify/mcp`, the MCP server |
+| `mcp/` | `@nullifyads/mcp`, the MCP server |
 | `extension/` | Chrome extension (Manifest V3) |
 | `bench/` | NullBench: trap pages, normal flows, test suites, results |
 | `docs/` | Demo, screenshots, store listing, privacy policy, launch notes |

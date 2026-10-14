@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { guard, type NullifyGuard } from "@nullify/agent-guard";
+import { guard, type NullifyGuard } from "@nullifyads/agent-guard";
 import { ATTACKS, DRIVERS, LEGIT, clicker, runCase, wasHijacked } from "./cases.js";
 
 test.describe("fixture check: every attack really hijacks an unprotected vision agent", () => {

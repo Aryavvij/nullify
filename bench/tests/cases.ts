@@ -2,7 +2,7 @@
  * Attack and legit scenarios, shared by the Playwright tests and NullBench.
  * Nothing in here depends on the test runner: checks throw on failure.
  */
-import type { NullifyGuard } from "@nullify/agent-guard";
+import type { NullifyGuard } from "@nullifyads/agent-guard";
 import type { Page } from "@playwright/test";
 
 // ---------------------------------------------------------------------------

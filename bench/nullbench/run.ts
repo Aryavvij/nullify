@@ -12,7 +12,7 @@ import { spawn } from "node:child_process";
 import { mkdir, writeFile } from "node:fs/promises";
 import { arch, platform, release } from "node:os";
 import { fileURLToPath } from "node:url";
-import { guard, type NullifyGuard } from "@nullify/agent-guard";
+import { guard, type NullifyGuard } from "@nullifyads/agent-guard";
 import { chromium, type Browser, type BrowserContext, type Page } from "@playwright/test";
 import { ATTACKS, LEGIT, clicker, runCase, wasHijacked, type Driver } from "../tests/cases.js";
 import { EXTENSION_PATH, HOST_RULES } from "../tests/env.js";

@@ -8,7 +8,7 @@
 import { execFileSync, spawn } from "node:child_process";
 import { mkdir, readFile, rm } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
-import { guard } from "@nullify/agent-guard";
+import { guard } from "@nullifyads/agent-guard";
 import { chromium } from "@playwright/test";
 
 const root = fileURLToPath(new URL("..", import.meta.url));

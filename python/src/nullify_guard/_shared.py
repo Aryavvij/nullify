@@ -9,7 +9,7 @@ from functools import lru_cache
 from importlib.resources import files
 from typing import Any, Callable, Optional
 
-#: Name of the in-page API; must match AGENT_API in @nullify/core.
+#: Name of the in-page API; must match AGENT_API in @nullifyads/core.
 AGENT_API = "__nullifyAgent"
 
 CALL_JS = """([api, method, args]) => {

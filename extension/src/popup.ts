@@ -1,5 +1,5 @@
 // Toolbar popup: what Nullify did on the current page, and the per-site switch.
-import { siteOf } from "@nullify/core";
+import { siteOf } from "@nullifyads/core";
 import type { RuntimeMessage } from "./channel.js";
 import { ago, explain } from "./explain.js";
 import { currentPage, disabledSites, isIntervention, readTab } from "./store.js";

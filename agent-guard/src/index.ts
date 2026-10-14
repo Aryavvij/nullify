@@ -1,21 +1,21 @@
 import { randomUUID } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
-import type { HiddenTextReport, InitOptions, NullifyEvent, PageRisk, PointVerdict } from "@nullify/core";
+import type { HiddenTextReport, InitOptions, NullifyEvent, PageRisk, PointVerdict } from "@nullifyads/core";
 import type { BrowserContext, Frame, Locator, Page } from "playwright-core";
 
-export type { HiddenTextReport, NullifyEvent, PageRisk, PointVerdict } from "@nullify/core";
+export type { HiddenTextReport, NullifyEvent, PageRisk, PointVerdict } from "@nullifyads/core";
 
 const require = createRequire(import.meta.url);
 
-/** Name of the in-page API; must match AGENT_API in @nullify/core. */
+/** Name of the in-page API; must match AGENT_API in @nullifyads/core. */
 const AGENT_API = "__nullifyAgent";
 
 let coreSource: string | undefined;
 
-/** The browser bundle of @nullify/core, read once and cached. */
+/** The browser bundle of @nullifyads/core, read once and cached. */
 function loadCore(): string {
-  coreSource ??= readFileSync(require.resolve("@nullify/core/iife"), "utf8");
+  coreSource ??= readFileSync(require.resolve("@nullifyads/core/iife"), "utf8");
   return coreSource;
 }
 

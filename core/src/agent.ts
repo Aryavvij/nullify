@@ -251,7 +251,7 @@ export function pageRisk(): PageRisk {
 }
 
 // ---------------------------------------------------------------------------
-// API for @nullify/agent-guard
+// API for @nullifyads/agent-guard
 
 export const AGENT_API = "__nullifyAgent";
 

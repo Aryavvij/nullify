@@ -5,7 +5,7 @@
 
 | Deliverable | Who it's for | Role |
 |---|---|---|
-| **`@nullify/core`** | Everything below | One detection engine. The shared brain. |
+| **`@nullifyads/core`** | Everything below | One detection engine. The shared brain. |
 | **Nullify Agent Guard** (npm + pip + MCP server) | Developers running browser agents (browser-use, Stagehand, Playwright MCP, in-house agents) | **The headline product.** Blocks hijacked clicks before the agent makes them. |
 | **Nullify Extension** (Chrome/Edge, MV3) | Everyday users | Demo, showcase, and a data source. Not the main product. |
 | **NullBench** | Researchers and agent developers | A public benchmark for agent clickjacking. The asset most likely to get cited. |
@@ -20,7 +20,7 @@
 
 ## Architecture
 ```
-                         @nullify/core
+                         @nullifyads/core
    (overlay · click-intent · rogue-tab · redirect · hidden-text · scam detectors)
           ┌──────────────────┼───────────────────┬────────────────────┐
      Agent Guard          Extension            NullBench           (Phase 5) Crawler
@@ -91,7 +91,7 @@ The core is page-agnostic. The same detector file is injected by the extension, 
 - Every refusal returns a **reason** the agent can act on (`"blocked: invisible overlay z=9999 covering target"`).
 
 **Packaging:**
-- `npm i @nullify/agent-guard`: Playwright/Puppeteer wrapper (`guard(page)` patches `click`).
+- `npm i @nullifyads/agent-guard`: Playwright/Puppeteer wrapper (`guard(page)` patches `click`).
 - `pip install nullify-guard`: wrapper for Playwright-Python and browser-use.
 - **MCP server** exposing `safe_click`, `page_risk`, `visible_text`.
 
@@ -107,7 +107,7 @@ What's built:
 - **Rogue-tab closer**, `visibleText()` (page text without hidden text), `pageRisk()`.
 - **Safe refusal messages:** only visible, non-instruction text, so a refusal can't become an injection channel.
 - **Tamper-resistant in-page API:** it can't be replaced, and the one state-changing call needs a per-session token.
-- **Packages:** `@nullify/agent-guard` (npm), `nullify-guard` (Python, async + sync), and `@nullify/mcp` (an MCP server with screenshot / click / type / page_text / page_risk tools).
+- **Packages:** `@nullifyads/agent-guard` (npm), `nullify-guard` (Python, async + sync), and `@nullifyads/mcp` (an MCP server with screenshot / click / type / page_text / page_risk tools).
 
 Results: **18/18 attacks blocked for vision, DOM and raw-CDP agents** (5 new agent clickjacking pages). **13/13 legit flows work with zero interventions** for all three, including custom-styled file pickers and checkboxes (invisible native inputs under a styled label). Tests: 26 unit (incl. 7 MCP) + 152 end-to-end + 6 Python.
 
@@ -161,7 +161,7 @@ Publish the guard on GitHub, npm and PyPI. Post it in the browser-use, Stagehand
 ### 🟡 Checkpoint A status: ready to launch, waiting on you
 **Done:**
 - Licensed MIT (© 2026 Aryavvij); every package is at version 0.1.0 with full metadata.
-- `@nullify/core`, `@nullify/agent-guard` and `@nullify/mcp` were packed, installed from their tarballs into an empty project, and used successfully: a refused trap click, visible-only text, and the MCP server started via its installed command.
+- `@nullifyads/core`, `@nullifyads/agent-guard` and `@nullifyads/mcp` were packed, installed from their tarballs into an empty project, and used successfully: a refused trap click, visible-only text, and the MCP server started via its installed command.
 - `nullify-guard` was built as a wheel (it includes the engine bundle) and used successfully from a fresh virtual environment.
 - Names checked on 13 Oct 2026: all three npm names and the PyPI name are unpublished. The `@nullify` scope needs an npm org of that name, which can only be confirmed when creating it; unscoped fallbacks are free.
 - Public README, CHANGELOG, CI workflow (pull requests and manual runs until the repo is public), and the launch kit:

@@ -3,10 +3,10 @@
 ## 0.1.0 (first release)
 
 **For AI agents**
-- `@nullify/agent-guard` (npm) and `nullify-guard` (PyPI): every Playwright click lands on what is visible, or is refused with a reason the agent can act on. That covers invisible controls, invisible layers over buttons, invisible frames, and targets covered by something else. A shield inside the page re-checks during the click itself.
+- `@nullifyads/agent-guard` (npm) and `nullify-guard` (PyPI): every Playwright click lands on what is visible, or is refused with a reason the agent can act on. That covers invisible controls, invisible layers over buttons, invisible frames, and targets covered by something else. A shield inside the page re-checks during the click itself.
 - Blocks pop-ups and redirects a click didn't ask for, and closes tabs opened without approval.
 - `visibleText()` returns page text without hidden text; `pageRisk()` summarises overlays, hidden instructions and scam signals.
-- `@nullify/mcp`: an MCP server with a protected browser (navigate, screenshot, checked clicks, visible page text, page risk).
+- `@nullifyads/mcp`: an MCP server with a protected browser (navigate, screenshot, checked clicks, visible page text, page risk).
 
 **For people**
 - Chrome extension: blocks pop-ups, pop-unders and redirects from invisible layers and stray clicks, removes click-stealing layers, flags tech-support scam pages, and shows each block as a step-by-step chain. On/off switch per site.

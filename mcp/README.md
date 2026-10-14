@@ -1,14 +1,14 @@
-# @nullify/mcp
+# @nullifyads/mcp
 
 An MCP server that gives an AI agent a browser where every click is checked by [Nullify](https://github.com/Aryavvij/nullify). A click lands on what is visible, or is refused with a reason. Page text comes back without hidden instructions.
 
 ## Use it with Claude Code
 ```bash
 npx playwright install chromium        # once: the browser it drives
-claude mcp add nullify -- npx -y @nullify/mcp
+claude mcp add nullify -- npx -y @nullifyads/mcp
 ```
 
-Any MCP client works: run `npx -y @nullify/mcp` as a stdio server.
+Any MCP client works: run `npx -y @nullifyads/mcp` as a stdio server.
 
 ## Tools
 | Tool | What it does |

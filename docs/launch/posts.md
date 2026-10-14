@@ -32,7 +32,7 @@ Edit freely, and keep every number traceable to `bench/results/`. Don't post the
 > - Raw CDP agent: 17/17 (one trap can't fire for it)
 > - With Nullify: 0/18, normal flows 13/13, ~1 ms per click
 >
-> It refuses bad clicks with a reason the model can act on, and `visibleText()` gives the model page text without hidden instructions. npm: `@nullify/agent-guard`, pip: `nullify-guard`, and an MCP server: `@nullify/mcp`. MIT. Repo with the benchmark and a 66-second demo: https://github.com/Aryavvij/nullify
+> It refuses bad clicks with a reason the model can act on, and `visibleText()` gives the model page text without hidden instructions. npm: `@nullifyads/agent-guard`, pip: `nullify-guard`, and an MCP server: `@nullifyads/mcp`. MIT. Repo with the benchmark and a 66-second demo: https://github.com/Aryavvij/nullify
 >
 > Looking for people running agents in production to tell me what breaks. What does your agent trip over?
 
@@ -40,7 +40,7 @@ Edit freely, and keep every number traceable to `bench/results/`. Don't post the
 
 ## browser-use / Stagehand / Playwright MCP community message
 
-> Hi all. I've been working on click safety for browser agents and wanted to share it in case it's useful here. `@nullify/agent-guard` checks each Playwright click (coordinates or element) against what's actually under the pointer, refuses clicks that would hit invisible controls, frames or layers, and gives a reason the agent can act on. On my benchmark it took an unprotected coordinate agent from 18/18 hijacked to 0/18 without breaking normal flows. Repo: https://github.com/Aryavvij/nullify. Would an integration with [framework] be welcome? Happy to open a PR if so.
+> Hi all. I've been working on click safety for browser agents and wanted to share it in case it's useful here. `@nullifyads/agent-guard` checks each Playwright click (coordinates or element) against what's actually under the pointer, refuses clicks that would hit invisible controls, frames or layers, and gives a reason the agent can act on. On my benchmark it took an unprotected coordinate agent from 18/18 hijacked to 0/18 without breaking normal flows. Repo: https://github.com/Aryavvij/nullify. Would an integration with [framework] be welcome? Happy to open a PR if so.
 
 ---
 

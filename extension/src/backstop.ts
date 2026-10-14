@@ -8,7 +8,7 @@
  * shortly before (a real click on a real link), and only matches a site that
  * was blocked moments ago.
  */
-import { siteOf } from "@nullify/core";
+import { siteOf } from "@nullifyads/core";
 
 export interface BackstopSignals {
   /** Sites the engine refused to open from this tab, with when. */

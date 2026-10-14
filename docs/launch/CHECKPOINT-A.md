@@ -3,7 +3,7 @@
 The gate before Phase 5 (crawler and observatory). Two weeks after release, decide from evidence, not hope.
 
 ## Who to reach
-The people who'd install `@nullify/agent-guard` are developers running browser agents in production or close to it:
+The people who'd install `@nullifyads/agent-guard` are developers running browser agents in production or close to it:
 - the **browser-use**, **Stagehand** and **Playwright MCP** communities (GitHub Discussions and Discords);
 - **r/LocalLLaMA** and **r/AI_Agents** (agent builders), and **r/webdev** for the extension angle;
 - **Hacker News** (Show HN), with the benchmark as the headline;
@@ -15,7 +15,7 @@ Post drafts are in [posts.md](posts.md). Post the benchmark and the demo, not ad
 | Signal | Where |
 |---|---|
 | GitHub stars, issues, PRs | repository insights |
-| npm weekly downloads (`@nullify/agent-guard`, `@nullify/mcp`) | npm package pages |
+| npm weekly downloads (`@nullifyads/agent-guard`, `@nullifyads/mcp`) | npm package pages |
 | PyPI downloads (`nullify-guard`) | pypistats.org |
 | Extension installs and ratings | Chrome Web Store dashboard |
 | Replies that say "I hit this" or "can it support X" | posts, DMs |

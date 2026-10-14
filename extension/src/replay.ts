@@ -1,6 +1,6 @@
 // Replay page: every blocked attempt in a tab, drawn as a chain
 // (this page -> who did it -> what it tried -> what Nullify did).
-import { siteOf } from "@nullify/core";
+import { siteOf } from "@nullifyads/core";
 import { ago, explain } from "./explain.js";
 import { isIntervention, readTab, type PageRecord, type StoredEvent } from "./store.js";
 import { byId, el, shortUrl } from "./ui.js";

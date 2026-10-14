@@ -1,6 +1,6 @@
 // Registers the engine (honouring the per-site switch), keeps a per-tab history
 // of what it did, shows it on the toolbar badge, and runs the tab backstop.
-import { siteOf, type NullifyEvent } from "@nullify/core";
+import { siteOf, type NullifyEvent } from "@nullifyads/core";
 import { shouldCloseNewTab } from "./backstop.js";
 import type { RuntimeMessage } from "./channel.js";
 import {

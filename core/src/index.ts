@@ -1,5 +1,5 @@
 /**
- * @nullify/core — the shared detection engine.
+ * @nullifyads/core — the shared detection engine.
  *
  * This file must stay page-agnostic: the same bundle is injected by the
  * browser extension (MAIN world), by Agent Guard (Playwright addInitScript)
@@ -29,7 +29,7 @@ export interface InitOptions {
   policy?: Partial<Policy>;
   /** Expose `window.__nullifyDebug` (event log and detectors) for tests. Pages can see it, so never in production. */
   debug?: boolean;
-  /** Enables the agent API used by @nullify/agent-guard. The one state-changing call requires this token. */
+  /** Enables the agent API used by @nullifyads/agent-guard. The one state-changing call requires this token. */
   agentToken?: string;
 }
 

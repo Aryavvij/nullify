@@ -1,5 +1,5 @@
 {
-  "name": "@nullify/agent-guard",
+  "name": "@nullifyads/agent-guard",
   "version": "0.1.0",
   "description": "Stops AI browser agents from being clickjacked: every Playwright click lands on what is visible, or is refused with a reason the agent can act on.",
   "keywords": [
@@ -36,7 +36,7 @@
     }
   },
   "dependencies": {
-    "@nullify/core": "0.1.0"
+    "@nullifyads/core": "0.1.0"
   },
   "peerDependencies": {
     "playwright-core": ">=1.40.0"

@@ -1,9 +1,9 @@
 {
-  "name": "@nullify/extension",
+  "name": "@nullifyads/extension",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "dependencies": {
-    "@nullify/core": "0.1.0"
+    "@nullifyads/core": "0.1.0"
   }
 }

@@ -1,14 +1,14 @@
-# @nullify/agent-guard
+# @nullifyads/agent-guard
 
 Stops AI browser agents from being clickjacked. Every click your Playwright agent makes either lands on what is visible at that point, or is refused with a reason the agent can act on.
 
 ```bash
-npm install @nullify/agent-guard playwright-core
+npm install @nullifyads/agent-guard playwright-core
 ```
 
 ```ts
 import { chromium } from "playwright-core";
-import { guard, NullifyBlockedError } from "@nullify/agent-guard";
+import { guard, NullifyBlockedError } from "@nullifyads/agent-guard";
 
 const browser = await chromium.launch();
 const context = await browser.newContext();
@@ -58,6 +58,6 @@ Options: `protectMouse` (default `true`), `closeRogueTabs` (default `true`), `on
 - Coordinates are checked in the top-level page. Clicks inside same-origin frames are protected by that frame's own engine.
 - A frame hidden by a stylesheet change in the very instant before a raw CDP click can slip through. Frames are re-checked on every DOM change and every 500 ms.
 
-Python: [`nullify-guard`](https://pypi.org/project/nullify-guard/). MCP server: [`@nullify/mcp`](https://www.npmjs.com/package/@nullify/mcp). Source, benchmark and the browser extension: https://github.com/Aryavvij/nullify
+Python: [`nullify-guard`](https://pypi.org/project/nullify-guard/). MCP server: [`@nullifyads/mcp`](https://www.npmjs.com/package/@nullifyads/mcp). Source, benchmark and the browser extension: https://github.com/Aryavvij/nullify
 
 MIT License.

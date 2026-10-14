@@ -12,7 +12,7 @@
  */
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { guard, NullifyBlockedError, type NullifyGuard } from "@nullify/agent-guard";
+import { guard, NullifyBlockedError, type NullifyGuard } from "@nullifyads/agent-guard";
 import { chromium, type Browser, type BrowserContext, type Page } from "playwright-core";
 import { z } from "zod";
 

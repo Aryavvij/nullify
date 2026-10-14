@@ -36,6 +36,6 @@ Sync Playwright: `from nullify_guard.sync_api import guard` (same methods, witho
 | `g.visible_text(page)` / `g.hidden_text(page)` / `g.page_risk(page)` | Read the page safely |
 | `g.interventions` | Clicks refused and tabs closed so far |
 
-Same engine and behaviour as the npm package [`@nullify/agent-guard`](https://www.npmjs.com/package/@nullify/agent-guard), including its limits: Chromium only, and visible prompt injection still reaches your model.
+Same engine and behaviour as the npm package [`@nullifyads/agent-guard`](https://www.npmjs.com/package/@nullifyads/agent-guard), including its limits: Chromium only, and visible prompt injection still reaches your model.
 
 MIT License.

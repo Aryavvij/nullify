@@ -1,5 +1,5 @@
 {
-  "name": "@nullify/core",
+  "name": "@nullifyads/core",
   "version": "0.1.0",
   "description": "Detection engine behind Nullify: stops click hijacks (invisible overlays, unwanted pop-ups and redirects, hidden instructions) inside the page.",
   "keywords": [

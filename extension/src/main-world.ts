@@ -1,5 +1,5 @@
 // Runs in the page's own JS realm at document_start, before page scripts.
-import { init, onEvent, onPopupAllowed } from "@nullify/core";
+import { init, onEvent, onPopupAllowed } from "@nullifyads/core";
 import { ISOLATED_HELLO, MAIN_HELLO, MIN_SECRET_LENGTH, type ChannelMessage } from "./channel.js";
 
 // Captured before the engine patches dispatchEvent and before any page script runs,

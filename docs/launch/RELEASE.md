@@ -39,6 +39,6 @@ Follow `docs/store/README.md`: upload the zip, paste `docs/store/LISTING.md`, up
 
 ## 6. Check it worked
 ```bash
-npm view @nullify/agent-guard version   # 0.1.0
+npm view @nullifyads/agent-guard version   # 0.1.0
 pip index versions nullify-guard        # 0.1.0
 ```

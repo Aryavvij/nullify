@@ -1,5 +1,5 @@
 /** Plain-language descriptions of what Nullify did, shared by the popup and the replay page. */
-import { siteOf } from "@nullify/core";
+import { siteOf } from "@nullifyads/core";
 import type { StoredEvent } from "./store.js";
 
 export interface Explained {
