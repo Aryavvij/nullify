@@ -25,4 +25,4 @@ Nothing in either list leaves your browser. Removing the extension deletes both.
 If this policy changes, the new version will be published at this address with a new date, and the change will be noted in the extension's release notes.
 
 ## Contact
-Questions about this policy: <ADD A CONTACT ADDRESS BEFORE PUBLISHING>
+Questions about this policy: open an issue at https://github.com/Aryavvij/nullify/issues
